@@ -1,0 +1,56 @@
+/* =====================================================================
+   GLOBAL DESIGN SYSTEM
+   ---------------------------------------------------------------------
+   Author: Shayne Rothwell
+   Purpose:
+   - Simple, scalable color system based on your 5-color palette
+   - Supports both light and dark modes
+   - Includes typography, effects, and transitions
+   ===================================================================== */
+
+/* =========================================================
+   LIGHT THEME (Default)
+   ========================================================= */
+:root {
+  /* ---------------------------------------------------------
+     CORE COLOR PALETTE (Your Brand)
+     --------------------------------------------------------- */
+  --color-primary:   #334443;   /* Main brand color — buttons, highlights */
+  --color-secondary: #34656D;   /* Supporting / contrast color */
+  --color-bg:        white;   /* Page background */
+  --color-surface:   #FAF8F1;   /* Section / card background */
+  --color-text:      white;   /* Main text color */
+  --color-secondary-text:#686868;   /* Main text color */
+  --color-accent:    #FFD43B;   /* Optional accent for CTAs */
+  --color-border:    #E0E0E0;   /* Subtle dividers or outlines */
+
+  /* ---------------------------------------------------------
+     TYPOGRAPHY
+     --------------------------------------------------------- */
+  --font-primary: "Poppins", sans-serif;
+  --font-size-base: 1rem;          /* Paragraphs, default text */
+  --font-size-heading: 2.2rem;     /* Section titles or hero text */
+
+  /* ---------------------------------------------------------
+     EFFECTS
+     --------------------------------------------------------- */
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  --radius: 12px;
+  --transition-speed: 0.3s;
+}
+
+/* =========================================================
+   DARK THEME
+   Apply by adding class="dark-theme" to <body>
+   ========================================================= */
+.dark-theme {
+  /* Invert tones while keeping brand identity */
+  --color-primary:   #20232a;   /* Softer teal for dark backgrounds */
+  --color-secondary: #252827;   /* Muted gray-green tone */
+  --color-bg:        #1c1e1d;   /* Deep background */
+  --color-surface:   #E9E9E9;   /* Elevated surface contrast */
+  --color-text:      white;   /* Readable light text */
+  --color-accent:    #ffd43b;   /* Keep accent consistent */
+  --color-border:    #333333;
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
