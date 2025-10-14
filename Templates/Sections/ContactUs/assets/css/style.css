@@ -1,0 +1,158 @@
+/* 
+---------------------------------------------
+NAVBAR REFINEMENTS (COMPACT + RESPONSIVE)
+---------------------------------------------
+*/
+
+/* Slightly reduce default navbar padding */
+.navbar {
+  padding-top: 0.3rem !important;
+  padding-bottom: 0.3rem !important;
+}
+
+/* Contact info block (email + phone stacked) */
+.contact-info {
+  font-size: 0.85rem;
+  line-height: 1.3;
+}
+
+.contact-info i {
+  color: #007bff;
+}
+
+/* Space between logo and contact info */
+.navbar-brand + .contact-info {
+  margin-left: 10px;
+}
+
+/* ======================================
+   Desktop (≥992px)
+   Keep pill shape and spacing
+====================================== */
+@media (min-width: 992px) {
+  .navbar {
+    border-radius: 50px !important;
+    margin: 1rem 1.5rem !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  }
+}
+
+/* ======================================
+   HAMBURGER MENU REFINEMENT
+====================================== */
+
+/* Make the hamburger button smaller and tighter */
+.navbar-toggler {
+  padding: 0.2rem 0.4rem;   /* reduce clickable padding area */
+  font-size: 0.9rem;        /* shrink icon slightly */
+  border: none;             /* optional: remove border outline */
+  outline: none !important; /* prevent blue focus outline on click */
+  box-shadow: none !important;
+}
+
+/* Adjust the built-in Bootstrap icon size */
+.navbar-toggler-icon {
+  width: 20px;  /* default ~24px, this is slightly smaller */
+  height: 20px;
+  background-size: 18px 18px; /* scales down the internal bars */
+}
+
+/* Optional: if you want a custom color for the hamburger bars */
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0,0,0,0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ======================================
+   Mobile (<992px)
+   Compact, no pill shape + smaller fonts
+====================================== */
+@media (max-width: 991px) {
+
+  /* Navbar base styling */
+  .navbar {
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding-left: 0.8rem !important;
+    padding-right: 0.8rem !important;
+    box-shadow: none !important;
+  }
+
+  /* Contact info smaller and closer under brand */
+  .contact-info {
+    margin-top: 2px;
+    font-size: 0.75rem; /* smaller on mobile */
+    line-height: 1.2;
+  }
+
+  /* Dropdown (expanded) menu background */
+  .navbar-collapse {
+    background: #ffffff; /* Light background */
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.6rem 1rem;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Nav links smaller font and tighter spacing */
+  .nav-link {
+    margin: 0.2rem 0 !important;
+    font-size: 0.85rem !important; /* smaller text for mobile */
+    color: #333 !important;
+    font-weight: 500;
+  }
+
+  /* Optional hover effect for mobile items */
+  .nav-link:hover {
+    background: rgba(0, 123, 255, 0.07);
+    border-radius: 6px;
+  }
+
+  /* Button styling in mobile view */
+  .btn-primary {
+    width: 100%;
+    margin-top: 0.5rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    padding: 0.4rem 0;
+  }
+}
+
+/* 
+---------------------------------------------
+BUTTON STYLING
+---------------------------------------------
+*/
+/* “Request a Call” button */
+.btn-primary {
+  background-color: #007bff; /* Default blue color */
+  border: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-radius: 50px; /* Matches navbar’s pill shape */
+}
+
+/* Button hover effect */
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Basic link styling */
+.nav-link {
+  color: #333 !important; /* Dark gray text */
+  font-weight: 500; /* Slightly bold for visibility */
+  transition: all 0.3s; /* Smooth transition on hover */
+  margin: 0 8px; /* Adds space between each link */
+}
+
+/* When hovering or active */
+.nav-link:hover,
+.nav-link.active {
+  color: #007bff !important; /* Highlight color */
+}
+
+/* Adds a subtle hover animation */
+.nav-item:hover {
+  transform: scale(1.03); /* Slightly enlarges */
+  transition: transform 0.2s ease-in-out;
+}
+

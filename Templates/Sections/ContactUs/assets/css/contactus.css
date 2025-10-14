@@ -1,0 +1,335 @@
+/* ==============================================================
+   CONTACT US SECTION - Custom CSS
+   ============================================================== */
+/* Import theme variable definitions */
+@import url('variables.css');
+/* --- General Section Styling --- */
+.contact-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-surface);
+  padding: 25px 0;
+  font-family:var(--font-primary);
+}
+
+/* --- Container that holds both info and form --- */
+.contact-container {
+  display: flex;
+  width: 100%;
+  /* ---background: #fff;--- */
+  border-radius: 15px;
+  overflow: hidden;
+
+}
+
+/* --- Left side (Information) --- */
+.contact-info {
+  flex: 1;
+  padding: 60px 25px;
+
+  /* Align content to the right */
+  display: flex;
+  
+  justify-content: flex-end; /* stick content to the right */
+  text-align: left;          /* keep text left-aligned */
+}
+
+
+.contact-info .info-content {
+  max-width: 650px;
+  width: 100%;
+  padding: 60px 40px;        /* match .contact-info padding */
+  border-radius: 15px;
+  /*box-shadow: 0 4px 10px rgba(206, 47, 47, 0.08);*/
+  min-height: 650px;
+  box-sizing: border-box;
+}
+
+
+.contact-info h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  color: var(--color-secondary);
+}
+
+.contact-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-secondary);
+  margin-bottom: 25px;
+}
+
+/* --- Info details as 2x2 grid --- */
+.info-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 25px 40px;               /* Row and column spacing */
+  margin-top: 30px;
+}
+
+.info-item {
+  padding: 18px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+/* Medium screens: slightly smaller row gaps */
+@media (max-width: 1400px) {
+  .info-details {
+    grid-gap: 5px 5px; /* smaller row gap, slightly smaller column gap */
+     margin-top: 0px;
+  }
+  .info-item {
+  padding: 0px 0px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.contact-info p {
+  margin-bottom: 0px;
+}
+}
+
+
+.info-item:hover {
+  transform: translateY(-3px);
+}
+
+/* Headings like "Email", "Phone", etc. */
+.info-item h4 {
+  font-size: 1.1rem;
+  color: var(--color-secondary);   /* Accent yellow for titles */
+  margin-bottom: 5px;
+}
+
+/* Descriptive text */
+.info-item p {
+  margin: 2px 0;
+  font-size: 0.95rem;
+  color: var(--color-secondary-text);      /* Default gray text */
+  line-height: 1.5;
+}
+
+/* --- POP OUT actual contact detail line (last paragraph) --- */
+.info-item p:last-of-type {
+  color: var(--color-secondary);   /* Bright white to stand out */
+  font-weight: 600; /* Slightly bolder */
+}
+
+
+/* --- Right side (Form) --- */
+.contact-form {
+  flex: 1;
+  padding: 60px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Form container */
+.contact-form form {
+  width: 100%;
+  max-width: 650px;
+  min-height: 650px;
+  background: var(--color-secondary);
+  padding: 60px 40px;        /* match .contact-info padding */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+
+
+/* Align the contact form heading with left panel */
+.contact-form h3 {
+  font-size: 2.2rem;          /* same size as info h2 */
+  margin-bottom: 25px;
+  color: var(--color-text);
+  text-align: left;            /* align with info panel content */
+}
+/* Input fields */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color:  var(--color-text);
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+/* --- Input fields and textarea --- */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--color-secondary-text);
+  border-radius: 12px;       /* Smooth rounded corners */
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+/* --- Submit Button --- */
+.contact-form button {
+  width: 100%;                    /* full width to match input fields */
+  padding: 14px 20px;             /* comfortable padding */
+  border: none;
+  border-radius: 12px;            /* rounded corners */
+  background-color: var(--color-primary);      /* dark primary color */
+  color: #fff;                     /* white text */
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;               /* space from last field */
+  box-sizing: border-box;
+  display: block;
+}
+
+.contact-form button:hover {
+  background-color: #ffd43b;      /* hover accent */
+  color: var(--color-secondary);
+}
+
+/* Focus effect */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #20232a;
+  outline: none;
+  box-shadow: 0 0 6px rgba(32, 35, 42, 0.3);
+}
+
+/* Form row for first/last name */
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row .half-width {
+  flex: 1;
+}
+
+/* =========================
+   RESPONSIVE: TABLETS
+========================= */
+@media (max-width: 900px) and (min-width: 701px) {
+  .contact-info {
+    justify-content: center;  /* horizontal centering */
+    align-items: center;      /* vertical centering */
+    text-align: center;       /* center text */
+      padding: 40px 0px;
+  }
+
+  .contact-info .info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* center children inside the box */
+  }
+
+  /* Keep info-details in 2 columns on tablet */
+  .info-details {
+    grid-template-columns: 1fr 1fr;  /* 2 columns still */
+    grid-gap: 15px 20px;             /* smaller gaps */
+    justify-content: center;         /* center the grid items */
+  }
+  /* Stack panels vertically */
+  .contact-container {
+    flex-direction: column;
+  }
+
+  /* Keep info-details as 2 columns */
+  .info-details {
+    grid-template-columns: 1fr 1fr; /* 2 columns still */
+    grid-gap: 15px 20px;           /* slightly smaller gaps */
+  }
+
+  .info-item {
+    padding: 12px 15px;
+  }
+
+/* Center contact form */
+  .contact-form {
+    justify-content: center;  /* vertical centering inside its panel */
+    align-items: center;      /* horizontal centering */
+    padding: 40px 0px;
+    width: 100%;
+  }
+
+  .contact-form form {
+    max-width: 650px;
+    width: 100%;
+    min-height: auto; /* allow height to adjust */
+    padding: 40px 20px;
+  }
+
+  /* Form row (first/last name) stack vertically */
+  .form-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+/* =========================
+   RESPONSIVE:MOBILES
+========================= */
+@media (max-width: 700px) {
+  /* Keep stacked panels */
+  .contact-container {
+    flex-direction: column;
+  }
+
+  /* Convert info-details to 1 column */
+  .info-details {
+    grid-template-columns: 1fr;
+    grid-gap: 12px 0; /* smaller gaps for rows */
+  }
+
+  .info-item {
+    padding: 10px 12px;
+  }
+
+  /* Reduce font sizes */
+  .contact-info h2,
+  .contact-form h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  /* Contact section padding */
+  .contact-section {
+    padding: 20px 10px;
+  }
+
+  /* Left panel title & paragraph */
+  .contact-info h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact-info p {
+    font-size: 0.95rem;
+  }
+
+  /* Form heading */
+  .contact-form h3 {
+    font-size: 1.8rem;
+  }
+
+  /* Inputs and textarea padding */
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px 14px;
+  }
+
+  /* Submit button smaller */
+  .contact-form button {
+    padding: 12px 14px;
+    font-size: 0.95rem;
+  }
+}
+
+
