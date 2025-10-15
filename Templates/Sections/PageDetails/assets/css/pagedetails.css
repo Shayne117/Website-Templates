@@ -1,0 +1,205 @@
+/* ===============================
+   BASE STYLES
+================================= */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #001f3f; /* page background */
+  color: white;
+}
+
+/* ===============================
+   SECTION WRAPPER
+================================= */
+.section-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* fill the viewport */
+  padding: 2rem; /* spacing around container */
+}
+
+/* ===============================
+   MAIN CONTAINER
+   - Centered, rounded, responsive
+================================= */
+.main-container {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  height: 85vh; /* height of your layout (adjust here) */
+  background-color: #0a3d62;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* ===============================
+   LEFT COLUMN (Image Side)
+================================= */
+.left-column {
+  flex: 0 0 35%; /* takes up 35% of the container width */
+  position: relative;
+  display: flex;                 /* enables flexbox */
+  align-items: center;           /* vertical centering */
+  justify-content: center;       /* horizontal centering */
+  background-color: #002b5c;     /* optional background color */
+}
+
+/* Image stays fully inside container, centered and covered */
+.image-container {
+  width: 90%; /* smaller than full width for centered appearance */
+  height: 90%;
+  background: url("../images/login_web_1.jpg") center center / cover no-repeat;
+  border-radius: 12px; /* optional rounding */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* optional styling */
+}
+
+
+/* ===============================
+   RIGHT COLUMN (Content Side)
+================================= */
+.right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #1b4b7b;
+  padding: 2rem 3rem;
+  text-align: left;
+}
+
+/* ===============================
+   TOP ROW (Header, Description, Button)
+================================= */
+.top-row .header {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.top-row .description {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  max-width: 500px;
+}
+
+/* BUTTON */
+.button button {
+  background-color: #00b4d8;
+  border: none;
+  padding: 0.9rem 1.8rem;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* Button Hover Effect: Slight pulse + glow */
+.button button:hover {
+  background-color: #0077b6;
+  box-shadow: 0 0 15px rgba(0, 183, 255, 0.6);
+  transform: scale(1.05);
+}
+
+/* ===============================
+   BOTTOM ROW (4 Block Layout)
+================================= */
+.bottom-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "block1 block2 block2"
+    "block3 block3 block4";
+  gap: 10px;
+  flex-grow: 1; /* fills vertical space */
+  margin-top: 2rem;
+}
+
+/* ===============================
+   BLOCKS (Interactive Squares)
+================================= */
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1rem;
+  color: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Block Hover Effect: Slight grow + soft glow */
+.block:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Individual block colors */
+.block_1 {
+  grid-area: block1;
+  background-color: #0077b6;
+}
+
+.block_2 {
+  grid-area: block2;
+  background-color: #0096c7;
+}
+
+.block_3 {
+  grid-area: block3;
+  background-color: #00b4d8;
+}
+
+.block_4 {
+  grid-area: block4;
+  background-color: #90e0ef;
+  color: #001f3f;
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+================================= */
+@media (max-width: 992px) {
+  .main-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-column {
+    width: 100%;
+    height: 250px; /* image height for smaller screens */
+  }
+
+  .right-column {
+    padding: 1.5rem;
+  }
+
+  .bottom-row {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "block1 block2"
+      "block3 block4";
+  }
+}
+
+@media (max-width: 576px) {
+  .top-row .header {
+    font-size: 1.5rem;
+  }
+
+  .top-row .description {
+    font-size: 1rem;
+  }
+
+  .button button {
+    width: 100%;
+  }
+}
