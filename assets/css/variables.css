@@ -1,0 +1,49 @@
+:root {
+  /* ---------------------------------------------------------
+     🌞 LIGHT THEME (Default)
+  --------------------------------------------------------- */
+  --color-primary:   #F1F5FA;   /* Brand main */
+  --color-secondary: #273F4F;   /* Supporting dark tone */
+  --color-tertiary:  #447D9B;   /* Neutral gray */
+  --color-surface:   #D7D7D7;   /* Light section background */
+  --color-accent:    #FE7743;   /* Attention / highlight color */
+  --color-white:     white;
+
+  /* FONT COLORS */
+  --font-color-heading: #273F4F;
+  --font-color-body:    #447D9B;
+  --font-color-accent:  #FE7743;
+  --font-color-muted:   rgba(0, 0, 0, 0.6);
+  --font-color-light:   #FFFFFF;
+  --font-color-black:   black;
+  /* TYPOGRAPHY */
+  --font-primary: "Poppins", sans-serif;
+  --font-size-base: 1rem;
+  --font-size-heading: 2.2rem;
+
+  /* Transition for smooth switching */
+  --transition-speed: 0.3s;
+}
+
+/* ---------------------------------------------------------
+   🌚 DARK THEME
+   Add class "dark-theme" to <html> or <body> to activate
+--------------------------------------------------------- */
+.dark-theme {
+  --color-primary:   #273F4F;   /* Lighter brand tone */
+  --color-secondary: #447D9B;   /* Deep background tone */
+  --color-tertiary:  #F1F5FA;   /* Muted neutral */
+  --color-surface:   #D7D7D7;   /* Card background */
+  --color-accent:    #FE7743;   /* Keep accent pop */
+  --font-color-muted:   rgba(0, 0, 0, 0.6);
+  --color-white:     white;
+
+
+  /* FONT COLORS */
+  --font-color-heading: #FFFFFF;
+  --font-color-body:    #447D9B;
+  --font-color-accent:  #FE7743;
+  --font-color-muted:   rgba(255, 255, 255, 0.6);
+  --font-color-light:   #FFFFFF;
+  --font-color-light:   #000000;
+}
