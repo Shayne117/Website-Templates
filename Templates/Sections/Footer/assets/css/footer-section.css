@@ -1,10 +1,8 @@
-@import url('variables.css');
-
 /* --- Compact Footer Section --- */
 .footer-section {
   width: 100%;
-  background: var(--color-secondary);
-  color: var(--color-White);
+  background: var(--color-primary);
+  color: var(--font-color-light);
   padding: 40px 8%; /* reduced padding */
   box-sizing: border-box;
   font-size: 0.95rem;
@@ -24,7 +22,7 @@
 .footer-company h3 {
   font-size: 1.5rem; /* smaller heading */
   margin-bottom: 8px;
-  color: var(--color-accent);
+  color: var(--font-color-light);
 }
 
 .footer-company p {
@@ -38,7 +36,7 @@
 .footer-social h4 {
   font-size: 1.1rem;
   margin-bottom: 8px;
-  color: var(--color-Tertiary);
+  color: var(--color-tertiary);
 }
 
 .footer-links ul {
@@ -53,7 +51,7 @@
 
 .footer-links a {
   text-decoration: none;
-  color: var(--color-White);
+  color: var(--font-color-light);
   transition: color 0.3s ease;
 }
 
@@ -66,7 +64,7 @@
 }
 
 .footer-contact a {
-  color: var(--color-White);
+  color: var(--font-color-light);
   text-decoration: none;
 }
 

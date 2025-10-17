@@ -1,3 +1,11 @@
+/* ==========================================================
+   GLOBAL COLOR PALETTE & FONT VARIABLES
+   Author: Shayne Rothwell
+   Version: 1.2
+   Purpose:
+   - Unified color + font system for all sections
+   - Uses your custom 5+5 palette naming convention
+========================================================== */
 :root {
   /* ---------------------------------------------------------
      🌞 LIGHT THEME (Default)
@@ -45,5 +53,5 @@
   --font-color-accent:  #FE7743;
   --font-color-muted:   rgba(255, 255, 255, 0.6);
   --font-color-light:   #FFFFFF;
-  --font-color-light:   #000000;
+  --font-color-black:   #000000;
 }
