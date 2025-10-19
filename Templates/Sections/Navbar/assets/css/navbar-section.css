@@ -1,4 +1,4 @@
-@import url('variables.css');
+
 
 /* =========================
    NAVBAR CONTAINER
@@ -66,24 +66,24 @@
 }
 
 /* Contact Info */
-.contact-info {
+.contact-info-navbar{
   display: flex;
   align-items: center;
   gap: 10px;
   font-size: 0.95rem;
 }
 
-.contact-info a {
+.contact-info-navbar a {
   color: var(--font-color-heading);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.contact-info a:hover {
+.contact-info-navbar a:hover {
   color: var(--color-accent);
 }
 
-.contact-info span {
+.contact-info-navbar span {
   color: var(--color-accent);
 }
 
@@ -135,7 +135,7 @@
    TABLET VIEW
 ========================= */
 @media (max-width: 1024px) {
-  .contact-info {
+  .contact-info-navbar {
     display: none;
   }
 

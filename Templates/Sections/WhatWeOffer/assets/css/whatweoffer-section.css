@@ -1,7 +1,4 @@
-
-/* =========================
-   WHAT WE OFFER SECTION
-========================= */
+/* ========================= WHAT WE OFFER SECTION ========================= */
 .offer-container {
   padding: 80px 10%;
   background: var(--color-primary);
@@ -32,7 +29,7 @@
   height: 100%;
   border-radius: 25px;
   object-fit: cover;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* RIGHT SIDE CONTENT */
@@ -93,14 +90,14 @@
   background: var(--color-bg);
   padding: 24px 22px;
   border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   border-top: 4px solid transparent;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .offer-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
   border-color: var(--color-accent);
 }
 
@@ -116,9 +113,7 @@
   line-height: 1.6;
 }
 
-/* =========================
-   TABLET (≤1024px)
-========================= */
+/* ========================= TABLET (≤1024px) ========================= */
 @media (max-width: 1024px) {
   .offer-content {
     flex-direction: column;
@@ -147,9 +142,9 @@
     border-radius: 15px;
   }
 
-  /* Move image from left column to header area */
+  /* Hide standalone image block */
   .image-block-offer {
-    display: none; /* hide standalone image block */
+    display: none;
   }
 
   /* Make the offer cards full width below */
@@ -159,9 +154,7 @@
   }
 }
 
-/* =========================
-   MOBILE (≤600px)
-========================= */
+/* ========================= MOBILE (≤600px) ========================= */
 @media (max-width: 600px) {
   .section-header {
     flex-direction: column;
@@ -189,3 +182,33 @@
     padding: 10px 24px;
   }
 }
+/* ========================= SCROLL ANIMATION STYLES ========================= */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+[data-animate].active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Variants */
+[data-animate="fade-left"] {
+  transform: translateX(-60px);
+}
+[data-animate="fade-right"] {
+  transform: translateX(60px);
+}
+[data-animate="fade-left"].active,
+[data-animate="fade-right"].active {
+  transform: translateX(0);
+}
+
+/* Slight stagger for multiple cards */
+.offer-card:nth-child(1) { transition-delay: 0.1s; }
+.offer-card:nth-child(2) { transition-delay: 0.2s; }
+.offer-card:nth-child(3) { transition-delay: 0.3s; }
+.offer-card:nth-child(4) { transition-delay: 0.4s; }

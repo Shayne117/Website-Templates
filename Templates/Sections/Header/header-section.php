@@ -7,8 +7,8 @@
      - Desktop, tablet, and mobile layouts
 ============================= -->
 
-<link rel="stylesheet" href="./assets/css/variables.css">
-<link rel="stylesheet" href="Header/assets/css/header-section.css">
+<link rel="stylesheet" href="assets/css/variables.css">
+<link rel="stylesheet" href="Templates/Sections/Header/assets/css/header-section.css">
 <section id="hero-header" class="header-container dark-theme">
   <div class="header-content">
 
@@ -27,3 +27,28 @@
 
   </div>
 </section>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".header-content > *, .image-block-header");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add("visible");
+      } else {
+        entry.target.classList.remove("visible"); // Animate out when scrolling out
+      }
+    });
+  }, { threshold: 0.2 });
+
+  elements.forEach(el => observer.observe(el));
+
+  // Parallax effect for image
+  const image = document.querySelector(".image-block-header img");
+  window.addEventListener("scroll", () => {
+    const rect = image.getBoundingClientRect();
+    const offset = window.scrollY - image.offsetTop + window.innerHeight/2;
+    image.style.transform = `translateY(${offset * 0.05}px)`; // subtle parallax
+  });
+});
+</script>

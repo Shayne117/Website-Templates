@@ -2,7 +2,7 @@
 .hours-fees-section {
   width: 100%;
   background: var(--color-primary);
-  color: var(--color-White);
+  color: var(--font-color-light);
   padding: 60px 5%;
   border-radius: 0; 
   scroll-margin-top: 100px;
@@ -28,13 +28,13 @@
 }
 
 .hours-column h2 {
-  color: var(--color-white);
+  color: var(--font-color-light);
   font-size: 1.8rem;
   margin-bottom: 12px;
 }
 
 .hours-column p {
-  color: var(--color-White);
+  color: var(--font-color-light);
   margin-bottom: 20px;
   opacity: 0.95;
   line-height: 1.5;
@@ -67,7 +67,7 @@
 }
 
 .fees-column h2 {
-  color: var(--color-white);
+  color: var(--font-color-light);
   font-size: 1.8rem;
   margin-bottom: 20px;
 }
@@ -110,19 +110,19 @@
 .card-header h4 {
   margin: 0;
   font-size: 1rem;
-  color: var(--color-White);
+  color: var(--font-color-light);
 }
 
 .card-header .price {
   font-size: 1.2rem;
   font-weight: 700;
-  color: var(--color-accent);
+  color: var(--font-color-light);
 }
 
 .fee-card ul {
   list-style: disc;
   margin-bottom: 10px;
-  color: var(--color-White);
+  color: var(--font-color-light);
   flex-grow: 1; /* pushes button to bottom */
 }
 
@@ -135,7 +135,7 @@
   padding: 8px 16px;
   border-radius: 25px;
   background: var(--color-accent);
-  color: var(--color-White);
+  color: var(--font-color-light);
   font-weight: bold;
   font-size: 0.9rem;
   text-decoration: none;
@@ -202,3 +202,33 @@
     font-size: 1.1rem;
   }
 }
+/* ========================= SCROLL ANIMATION STYLES ========================= */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: opacity, transform;
+}
+
+[data-animate].active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Variants */
+[data-animate="fade-left"] {
+  transform: translateX(-60px);
+}
+[data-animate="fade-right"] {
+  transform: translateX(60px);
+}
+[data-animate="fade-left"].active,
+[data-animate="fade-right"].active {
+  transform: translateX(0);
+}
+
+/* Slight stagger for fee cards */
+.fee-card:nth-child(1) { transition-delay: 0.1s; }
+.fee-card:nth-child(2) { transition-delay: 0.2s; }
+.fee-card:nth-child(3) { transition-delay: 0.3s; }
+.fee-card:nth-child(4) { transition-delay: 0.4s; }

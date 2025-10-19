@@ -1,28 +1,27 @@
 <!-- ============================
      NAVBAR SECTION
 ============================= -->
-<link rel="stylesheet" href="./assets/css/variables.css">
-<link rel="stylesheet" href="Navbar/assets/css/navbar-section.css">
+<link rel="stylesheet" href="assets/css/variables.css">
+<link rel="stylesheet" href="Templates/Sections/Navbar/assets/css/navbar-section.css">
 
 <header class="navbar-container">
   <div class="navbar">
 
     <!-- LOGO + NAME -->
-    <div class="logo-area">
-      <img src="assets/images/logo.png" alt="Logo" class="logo">
-      <h1 class="site-name">YourCompany</h1>
-    </div>
-
+<div class="logo-area">
+  <img src="https://via.placeholder.com/60x60.png?text=Logo" alt="Logo" class="logo">
+  <h1 class="site-name">YourCompany</h1>
+</div>
     <!-- NAV LINKS -->
     <nav class="nav-links">
       <a href="#about">About Us</a>
       <a href="#what-we-offer">What We Offer</a>
       <a href="#contact">Contact Us</a>
-      <a href="#hours">Hours & Fees</a>
+      <a href="#hours-fees">Hours & Fees</a>
     </nav>
 
     <!-- CONTACT INFO -->
-    <div class="contact-info">
+    <div class="contact-info-navbar">
       <a href="mailto:info@yourcompany.com">info@yourcompany.com</a>
       <span>|</span>
       <a href="tel:+27123456789">+27 12 345 6789</a>
@@ -39,7 +38,7 @@
     <a href="#about">About Us</a>
     <a href="#what-we-offer">What We Offer</a>
     <a href="#contact">Contact Us</a>
-    <a href="#hours">Hours & Fees</a>
+    <a href="#hours-fees">Hours & Fees</a>
     <div class="mobile-contact">
       <a href="mailto:info@yourcompany.com">info@yourcompany.com</a>
       <a href="tel:+27123456789">+27 12 345 6789</a>
