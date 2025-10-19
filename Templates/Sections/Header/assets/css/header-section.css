@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   background: var(--color-primary);
-  color: var(--font-color-light);
+  color: var(--font-color-white);
   padding: 80px 8%;
   overflow: hidden;
 }
@@ -34,7 +34,7 @@
 
 .text-block h3 {
   font-size: 1.3rem;
-  color: var(--font-color-light);
+  color: var(--font-color-white);
   font-weight: 500;
   margin-bottom: 10px;
 }
@@ -42,14 +42,14 @@
 .text-block h1 {
   font-size: 3rem;
   line-height: 1.2;
-  color: var(--font-color-light);
+  color: var(--font-color-white);
   margin-bottom: 20px;
   font-weight: 700;
 }
 
 .text-block p {
   font-size: 1.1rem;
-  color: var(--font-color-light);
+  color: var(--font-color-white);
   margin-bottom: 30px;
   max-width: 500px;
   line-height: 1.6;
@@ -59,7 +59,7 @@
 .btn-primary {
   display: inline-block;
   background: var(--color-accent);
-  color: var(--font-color-light);
+  color: var(--font-color-white);
   padding: 12px 32px;
   border-radius: 50px;
   text-decoration: none;

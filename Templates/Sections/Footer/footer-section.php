@@ -3,7 +3,7 @@
 ============================= -->
 
 <link rel="stylesheet" href="./assets/css/variables.css">
-<link rel="stylesheet" href="sections/Footer/assets/css/footer-section.css">
+<link rel="stylesheet" href="Footer/assets/css/footer-section.css">
 
 <footer class="footer-section dark-theme">
   <div class="footer-wrapper">
@@ -37,11 +37,11 @@
     <div class="footer-social">
       <h4>Follow Us</h4>
       <div class="social-icons">
-      <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
-      <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
-      <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
-    </div>
+        <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="assets/icons/twitter.svg" alt="Twitter"></a>
+        <a href="#"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
+        <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+      </div>
     </div>
 
   </div>

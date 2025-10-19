@@ -3,7 +3,7 @@
 ============================= -->
 
 <link rel="stylesheet" href="./assets/css/variables.css">
-<link rel="stylesheet" href="sections/HoursAndFees/assets/css/hoursandfees-section.css">
+<link rel="stylesheet" href="HoursAndFees/assets/css/hoursandfees-section.css">
 
 <section id="hours-fees" class="hours-fees-section dark-theme">
   <div class="content-wrapper">

@@ -7,8 +7,8 @@
      - Desktop, tablet, and mobile layouts
 ============================= -->
 
-<link rel="stylesheet" href="assets/css/variables.css">
-<link rel="stylesheet" href="sections/Header/assets/css/header-section.css">
+<link rel="stylesheet" href="./assets/css/variables.css">
+<link rel="stylesheet" href="Header/assets/css/header-section.css">
 <section id="hero-header" class="header-container dark-theme">
   <div class="header-content">
 

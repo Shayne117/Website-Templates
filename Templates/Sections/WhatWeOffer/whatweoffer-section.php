@@ -2,8 +2,8 @@
      WHAT WE OFFER SECTION
 ============================= -->
 
-<link rel="stylesheet" href="assets/css/variables.css">
-<link rel="stylesheet" href="sections/WhatWeOffer/assets/css/whatweoffer-section.css">
+<link rel="stylesheet" href="./assets/css/variables.css">
+<link rel="stylesheet" href="WhatWeOffer/assets/css/whatweoffer-section.css">
 <section id="what-we-offer" class="offer-container">
   <div class="offer-content">
 

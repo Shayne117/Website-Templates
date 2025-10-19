@@ -1,17 +1,18 @@
 <!-- ============================
      NAVBAR SECTION
 ============================= -->
-<link rel="stylesheet" href="assets/css/variables.css">
-<link rel="stylesheet" href="sections/Navbar/assets/css/navbar-section.css">
+<link rel="stylesheet" href="./assets/css/variables.css">
+<link rel="stylesheet" href="Navbar/assets/css/navbar-section.css">
 
 <header class="navbar-container">
   <div class="navbar">
 
     <!-- LOGO + NAME -->
-<div class="logo-area">
-  <img src="https://via.placeholder.com/60x60.png?text=Logo" alt="Logo" class="logo">
-  <h1 class="site-name">YourCompany</h1>
-</div>
+    <div class="logo-area">
+      <img src="assets/images/logo.png" alt="Logo" class="logo">
+      <h1 class="site-name">YourCompany</h1>
+    </div>
+
     <!-- NAV LINKS -->
     <nav class="nav-links">
       <a href="#about">About Us</a>
@@ -21,7 +22,7 @@
     </nav>
 
     <!-- CONTACT INFO -->
-    <div class="contact-info-navbar">
+    <div class="contact-info">
       <a href="mailto:info@yourcompany.com">info@yourcompany.com</a>
       <span>|</span>
       <a href="tel:+27123456789">+27 12 345 6789</a>
