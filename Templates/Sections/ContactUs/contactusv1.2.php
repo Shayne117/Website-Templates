@@ -10,7 +10,7 @@
 
 <!-- Import CSS files -->
 <link rel="stylesheet" href="assets/css/variables.css">
-<link rel="stylesheet" href="assets/css/contactusv1.2.css">
+<link rel="stylesheet" href="Templates/Sections/ContactUs/assets/css/contactusv1.2.css">
 
 <!-- ==============================
        CONTACT US SECTION

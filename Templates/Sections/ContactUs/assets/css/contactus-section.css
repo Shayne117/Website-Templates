@@ -178,8 +178,8 @@
   padding: 14px 20px;             /* comfortable padding */
   border: none;
   border-radius: 12px;            /* rounded corners */
-  background-color: var(--color-tertiary);      /* dark primary color */
-  color: #fff;                     /* white text */
+  background-color: var(--color-accent);      /* dark primary color */
+  color: var(--font-color-light);                    /* white text */
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
@@ -190,8 +190,8 @@
 }
 
 .contact-form button:hover {
-  background-color: var(--color-accent);      /* hover accent */
-  color: var(---font-color-white);
+  background-color: var(--color-tertiary);      /* hover accent */
+  color: var(--font-color-light);
 }
 
 /* Focus effect */

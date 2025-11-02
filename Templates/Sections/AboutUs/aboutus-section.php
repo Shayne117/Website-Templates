@@ -7,8 +7,8 @@
 <!-- Bootstrap Icons CDN -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
-<link rel="stylesheet" href="assets/css/variables.css">
-<link rel="stylesheet" href="Templates/Sections/AboutUs/assets/css/aboutus-section.css">
+<link rel="stylesheet" href="Sections/css/variables.css">
+<link rel="stylesheet" href="Sections/css/aboutus-section.css">
 <!-- ============================
      ABOUT US SECTION v1.8
      Author: Shayne Rothwell
@@ -21,7 +21,7 @@
 <link rel="stylesheet" href="assets/css/variables.css">
 <link rel="stylesheet" href="Templates/Sections/AboutUs/assets/css/aboutus-section.css">
 
-<section id="about" class="about-section">
+<section id="about-us" class="about-section">
   <div class="about-container">
 
     <!-- HEADER -->

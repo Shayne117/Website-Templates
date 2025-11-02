@@ -2,15 +2,15 @@
      FOOTER SECTION (Compact Version)
 ============================= -->
 
-<link rel="stylesheet" href="assets/css/variables.css">
-<link rel="stylesheet" href="Templates/Sections/Footer/assets/css/footer-section.css">
+<link rel="stylesheet" href="Sections/css/variables.css">
+<link rel="stylesheet" href="Sections/css/footer-section.css">
 
-<footer class="footer-section dark-theme">
+<footer id="footer" class="footer-section dark-theme">
   <div class="footer-wrapper">
 
     <!-- Company Info -->
     <div class="footer-company">
-      <h3>My Company</h3>
+      <h3>WondrWise Creations</h3>
       <p>Designing & hosting websites that grow your business.</p>
     </div>
 
@@ -19,18 +19,18 @@
       <h4>Quick Links</h4>
       <ul>
         <li><a href="#hero-header">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#hours-fees">Packages</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about-us">About</a></li>
+        <li><a href="#what-we-offer">What We Offer</a></li>
+        <li><a href="#hours-fees">hours-fees</a></li>
+        <li><a href="#contact-us">Contact Us</a></li>
       </ul>
     </div>
 
     <!-- Contact Info -->
     <div class="footer-contact">
       <h4>Contact</h4>
-      <p>Email: <a href="mailto:info@mycompany.com">info@mycompany.com</a></p>
-      <p>Phone: <a href="tel:+27123456789">+27 123 456 789</a></p>
+      <p>Email: <a href="mailto:info@wondrwisecreations.co.za">info@wondrwisecreations.co.za</a></p>
+      <p>Phone: <a href="tel:+27123456789">083 2929 810</a></p>
     </div>
 
     <!-- Social Icons -->
@@ -47,6 +47,6 @@
   </div>
 
   <div class="footer-bottom">
-    <p>&copy; 2025 My Company. All Rights Reserved.</p>
+    <p>&copy; 2025 WOndrWise Creations. All Rights Reserved.</p>
   </div>
 </footer>

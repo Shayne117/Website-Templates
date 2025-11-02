@@ -1,30 +1,29 @@
 <!-- ============================
      NAVBAR SECTION
 ============================= -->
-<link rel="stylesheet" href="assets/css/variables.css">
-<link rel="stylesheet" href="Templates/Sections/Navbar/assets/css/navbar-section.css">
+<link rel="stylesheet" href="Sections/css/variables.css">
+<link rel="stylesheet" href="Sections/css/navbar-section.css">
 
 <header class="navbar-container">
   <div class="navbar">
 
     <!-- LOGO + NAME -->
 <div class="logo-area">
-  <img src="https://via.placeholder.com/60x60.png?text=Logo" alt="Logo" class="logo">
-  <h1 class="site-name">YourCompany</h1>
+  <img src="Sections/images/logo_1.png?text=Logo" alt="Logo" class="logo">
 </div>
     <!-- NAV LINKS -->
     <nav class="nav-links">
-      <a href="#about">About Us</a>
+      <a href="#about-us">About Us</a>
       <a href="#what-we-offer">What We Offer</a>
-      <a href="#contact">Contact Us</a>
+      <a href="#contact-us">Contact Us</a>
       <a href="#hours-fees">Hours & Fees</a>
     </nav>
 
     <!-- CONTACT INFO -->
     <div class="contact-info-navbar">
-      <a href="mailto:info@yourcompany.com">info@yourcompany.com</a>
+      <a href="mailto:info@wondrwisecreations.co.za">info@wondrwisecreations.co.za</a>
       <span>|</span>
-      <a href="tel:+27123456789">+27 12 345 6789</a>
+      <a href="tel:+832929810">083 2929 810</a>
     </div>
 
     <!-- MOBILE MENU BUTTON -->
@@ -40,8 +39,8 @@
     <a href="#contact">Contact Us</a>
     <a href="#hours-fees">Hours & Fees</a>
     <div class="mobile-contact">
-      <a href="mailto:info@yourcompany.com">info@yourcompany.com</a>
-      <a href="tel:+27123456789">+27 12 345 6789</a>
+      <a href="mailto:info@wondrwisecreations.co.za">info@wondrwisecreations.co.za</a>
+      <a href="tel:+832929810">083 2929 810</a>
     </div>
   </div>
 </header>
