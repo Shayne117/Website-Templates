@@ -1,0 +1,218 @@
+body {
+      font-family: "Poppins", sans-serif;
+      background: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* ==========================
+       SLIDER CONTAINER
+    =========================== */
+    .container {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      height: 500px;
+      perspective: 1200px;
+    }
+
+    .cards {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* ==========================
+       RADIO BUTTONS
+    =========================== */
+    input[type="radio"] {
+      display: none;
+    }
+
+    /* ==========================
+       LABEL (EACH SLIDE)
+    =========================== */
+    .cards label {
+      position: absolute;
+      width: 350px;
+      height: 100%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      transition: transform 0.6s ease, opacity 0.3s ease;
+      cursor: pointer;
+      transform-style: preserve-3d;
+      opacity: 0.6;
+      z-index: 1;
+      pointer-events: auto; /* make the full card clickable */
+    }
+
+    /* disable pointer events on children so clicks trigger the label */
+    .cards label * {
+      pointer-events: none;
+    }
+
+    /* but still allow buttons or links to work */
+    .cards label a,
+    .cards label button {
+      pointer-events: auto;
+    }
+
+    /* ==========================
+       CARD CONTENT
+    =========================== */
+    .card {
+      width: 100%;
+      height: 100%;
+      background: #1c1c1c;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transform: scale(0.9);
+      transition: transform 0.5s ease;
+    }
+
+    .image {
+      position: relative;
+      width: 100%;
+      height: 70%;
+      overflow: hidden;
+    }
+
+    .image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .dots {
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 6px;
+    }
+
+    .dots div {
+      width: 8px;
+      height: 8px;
+      background: white;
+      border-radius: 50%;
+      opacity: 0.6;
+    }
+
+    .infos {
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .infos .name {
+      font-size: 1.3rem;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .infos .lorem {
+      font-size: 0.9rem;
+      color: #ccc;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .btn-details {
+      background: #f04;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .actions {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .actions i {
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .actions i:hover {
+      color: #f04;
+    }
+
+    /* ==========================
+       SLIDE POSITIONS
+    =========================== */
+    #s1:checked ~ .cards #slide1,
+    #s2:checked ~ .cards #slide2,
+    #s3:checked ~ .cards #slide3,
+    #s4:checked ~ .cards #slide4,
+    #s5:checked ~ .cards #slide5 {
+      transform: translateX(0) scale(1);
+      opacity: 1;
+      z-index: 5;
+    }
+
+    #s1:checked ~ .cards #slide2,
+    #s2:checked ~ .cards #slide3,
+    #s3:checked ~ .cards #slide4,
+    #s4:checked ~ .cards #slide5,
+    #s5:checked ~ .cards #slide1 {
+      transform: translateX(150px) scale(1);
+      z-index: 4;
+       opacity: 1;
+    }
+
+    #s1:checked ~ .cards #slide3,
+    #s2:checked ~ .cards #slide4,
+    #s3:checked ~ .cards #slide5,
+    #s4:checked ~ .cards #slide1,
+    #s5:checked ~ .cards #slide2 {
+      transform: translateX(300px) scale(0.9);
+      opacity: 1;
+      z-index: 3;
+    }
+
+    #s1:checked ~ .cards #slide5,
+    #s2:checked ~ .cards #slide1,
+    #s3:checked ~ .cards #slide2,
+    #s4:checked ~ .cards #slide3,
+    #s5:checked ~ .cards #slide4 {
+       opacity: 1;
+      transform: translateX(-150px) scale(1);
+      z-index: 4;
+    }
+
+    #s1:checked ~ .cards #slide4,
+    #s2:checked ~ .cards #slide5,
+    #s3:checked ~ .cards #slide1,
+    #s4:checked ~ .cards #slide2,
+    #s5:checked ~ .cards #slide3 {
+      transform: translateX(-300px) scale(0.9);
+      opacity: 1;
+      z-index: 3;
+    }
+
+    /* make centered card appear larger */
+    #s1:checked ~ .cards #slide1 .card,
+    #s2:checked ~ .cards #slide2 .card,
+    #s3:checked ~ .cards #slide3 .card,
+    #s4:checked ~ .cards #slide4 .card,
+    #s5:checked ~ .cards #slide5 .card {
+       opacity: 1;
+      transform: scale(1);
+    }
